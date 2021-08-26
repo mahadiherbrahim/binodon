@@ -25,7 +25,8 @@ const Series = () => {
 
     useEffect(() => {
         fetchSeries();
-    }, [page, genreforURL])
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <div>
