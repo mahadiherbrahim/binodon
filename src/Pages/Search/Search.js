@@ -70,7 +70,7 @@ const Search = () => {
             <div className="trendingContent">
                 {
                     content && content.map((c) =>
-                        <SingleContent key={c.id} content={c} />
+                        <SingleContent key={c.id} content={c} media_type={type ? "tv" : "movie"} />
                     )
                 }
                 {searchText &&

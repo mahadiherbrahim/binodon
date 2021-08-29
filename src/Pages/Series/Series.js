@@ -21,8 +21,6 @@ const Series = () => {
         setNumberOfPage(data.total_pages)
         setContent(data.results)
     }
-
-
     useEffect(() => {
         fetchSeries();
         // eslint-disable-next-line
@@ -42,7 +40,7 @@ const Series = () => {
             <div className="trendingContent">
                 {
                     content && content.map((c) =>
-                        <SingleContent key={c.id} content={c} />
+                        <SingleContent key={c.id} content={c} media_type="tv" />
                     )
                 }
             </div>

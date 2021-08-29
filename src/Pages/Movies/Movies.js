@@ -41,7 +41,7 @@ const Movies = () => {
             <div className="trendingContent">
                 {
                     content && content.map((c) =>
-                        <SingleContent key={c.id} content={c} />
+                        <SingleContent key={c.id} content={c} media_type="movie" />
                     )
                 }
             </div>

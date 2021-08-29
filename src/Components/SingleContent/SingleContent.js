@@ -3,9 +3,9 @@ import './SingleContent.css'
 import { img_300, unavailable } from '../../Config/Config'
 import { Badge } from '@material-ui/core';
 import ContentModal from '../ContentModal/ContentModal'
-const SingleContent = ({ content }) => {
+const SingleContent = ({ content, media_type }) => {
 
-    const { id, title, poster_path, name, first_air_date, release_date, media_type, vote_average } = content
+    const { id, title, poster_path, name, first_air_date, release_date, vote_average } = content
 
     return (
         <ContentModal media_type={media_type} id={id}>
